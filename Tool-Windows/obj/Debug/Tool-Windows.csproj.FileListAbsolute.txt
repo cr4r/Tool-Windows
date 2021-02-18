@@ -1,0 +1,14 @@
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\bin\Debug\Tool-Windows.exe.config
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\bin\Debug\Tool-Windows.exe
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\bin\Debug\Tool-Windows.pdb
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\obj\Debug\Tool-Windows.csprojAssemblyReference.cache
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\obj\Debug\Tool_Windows.Menu.resources
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\obj\Debug\Tool_Windows.Properties.Resources.resources
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\obj\Debug\Tool_Windows.tools.nordVPN.resources
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\obj\Debug\Tool-Windows.csproj.GenerateResource.cache
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\obj\Debug\Tool-Windows.csproj.CoreCompileInputs.cache
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\obj\Debug\Tool-Windows.exe
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\obj\Debug\Tool-Windows.pdb
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\bin\Debug\id\Tool-Windows.resources.dll
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\obj\Debug\Tool_Windows.tools.nordVPN.id.resources
+C:\Users\fatur\Documents\Tool-Windows\Tool-Windows\obj\Debug\id\Tool-Windows.resources.dll
