@@ -105,7 +105,7 @@ namespace Tool_Windows.tools
 
         private void btnKembali_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Visible = false;
         }
 
         private void lblRefresh_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

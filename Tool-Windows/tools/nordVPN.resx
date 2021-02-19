@@ -124,9 +124,6 @@
   <data name="label1.Text" xml:space="preserve">
     <value>Email</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>455, 308</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="lblRefresh.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -296,6 +293,9 @@
   <data name="btnSalin.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
   </data>
+  <data name="groupBox1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
@@ -400,8 +400,8 @@ Akun NordVPN</value>
   <data name="btnGenerate.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="groupBox1.ToolTip" xml:space="preserve">
-    <value />
+  <data name="&gt;&gt;btnSalin.Name" xml:space="preserve">
+    <value>btnSalin</value>
   </data>
   <data name="&gt;&gt;btnKembali.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -478,8 +478,8 @@ Akun NordVPN</value>
   <data name="&gt;&gt;lblPassword.Name" xml:space="preserve">
     <value>lblPassword</value>
   </data>
-  <data name="&gt;&gt;btnSalin.Name" xml:space="preserve">
-    <value>btnSalin</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>455, 308</value>
   </data>
   <data name="&gt;&gt;groupBox1.ZOrder" xml:space="preserve">
     <value>2</value>

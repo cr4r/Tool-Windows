@@ -151,9 +151,9 @@ namespace Tool_Windows.tools
             this.Controls.Add(this.gbGenerate);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
-            this.MaximizeBox = false;
             this.Name = "nordVPN";
             this.toolTip1.SetToolTip(this, resources.GetString("$this.ToolTip"));
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.nordVPN_Load);
             this.gbGenerate.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
