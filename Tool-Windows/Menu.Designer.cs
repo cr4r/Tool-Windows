@@ -33,7 +33,7 @@ namespace Tool_Windows
             this.btnNordVPN = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.plGambarAtas = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblDashboard = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnMinimize = new System.Windows.Forms.Button();
@@ -42,7 +42,7 @@ namespace Tool_Windows
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbLogo = new System.Windows.Forms.PictureBox();
             this.plIsi = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.plGambarAtas.SuspendLayout();
@@ -51,18 +51,19 @@ namespace Tool_Windows
             this.panel2.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // btnNordVPN
             // 
             this.btnNordVPN.BackColor = System.Drawing.Color.Transparent;
+            this.btnNordVPN.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNordVPN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnNordVPN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNordVPN.ForeColor = System.Drawing.Color.White;
-            this.btnNordVPN.Location = new System.Drawing.Point(-2, -1);
+            this.btnNordVPN.Location = new System.Drawing.Point(0, -1);
             this.btnNordVPN.Name = "btnNordVPN";
-            this.btnNordVPN.Size = new System.Drawing.Size(202, 46);
+            this.btnNordVPN.Size = new System.Drawing.Size(200, 46);
             this.btnNordVPN.TabIndex = 0;
             this.btnNordVPN.Text = "NordVPN";
             this.btnNordVPN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -86,8 +87,9 @@ namespace Tool_Windows
             // 
             this.plGambarAtas.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.plGambarAtas.Controls.Add(this.label1);
+            this.plGambarAtas.Controls.Add(this.lblDashboard);
             this.plGambarAtas.Controls.Add(this.pictureBox2);
+            this.plGambarAtas.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.plGambarAtas.ForeColor = System.Drawing.Color.Transparent;
             this.plGambarAtas.Location = new System.Drawing.Point(3, 3);
             this.plGambarAtas.Name = "plGambarAtas";
@@ -97,17 +99,17 @@ namespace Tool_Windows
             this.plGambarAtas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.plGambarAtas_MouseMove);
             this.plGambarAtas.MouseUp += new System.Windows.Forms.MouseEventHandler(this.plGambarAtas_MouseUp);
             // 
-            // label1
+            // lblDashboard
             // 
-            this.label1.Font = new System.Drawing.Font("Comic Sans MS", 15F);
-            this.label1.ForeColor = System.Drawing.Color.GhostWhite;
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Location = new System.Drawing.Point(38, 8);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 32);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Dashboard";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDashboard.Font = new System.Drawing.Font("Comic Sans MS", 15F);
+            this.lblDashboard.ForeColor = System.Drawing.Color.GhostWhite;
+            this.lblDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblDashboard.Location = new System.Drawing.Point(38, 8);
+            this.lblDashboard.Name = "lblDashboard";
+            this.lblDashboard.Size = new System.Drawing.Size(118, 32);
+            this.lblDashboard.TabIndex = 3;
+            this.lblDashboard.Text = "Dashboard";
+            this.lblDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox2
             // 
@@ -157,7 +159,7 @@ namespace Tool_Windows
             this.btnFull.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnFull.Font = new System.Drawing.Font("Hobo Std", 12F, System.Drawing.FontStyle.Bold);
             this.btnFull.ForeColor = System.Drawing.Color.White;
-            this.btnFull.Location = new System.Drawing.Point(55, -2);
+            this.btnFull.Location = new System.Drawing.Point(56, -2);
             this.btnFull.Name = "btnFull";
             this.btnFull.Size = new System.Drawing.Size(43, 54);
             this.btnFull.TabIndex = 4;
@@ -208,22 +210,30 @@ namespace Tool_Windows
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Goldenrod;
-            this.panel3.Controls.Add(this.pictureBox1);
+            this.panel3.Controls.Add(this.pbLogo);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 52);
             this.panel3.TabIndex = 0;
             // 
-            // pictureBox1
+            // pbLogo
             // 
-            this.pictureBox1.Image = global::Tool_Windows.Properties.Resources.Coders_Family;
-            this.pictureBox1.Location = new System.Drawing.Point(3, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(193, 52);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.pbLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbLogo.Cursor = System.Windows.Forms.Cursors.NoMove2D;
+            this.pbLogo.Image = global::Tool_Windows.Properties.Resources.Coders_Family;
+            this.pbLogo.Location = new System.Drawing.Point(3, -1);
+            this.pbLogo.Name = "pbLogo";
+            this.pbLogo.Size = new System.Drawing.Size(193, 52);
+            this.pbLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLogo.TabIndex = 0;
+            this.pbLogo.TabStop = false;
+            this.pbLogo.Click += new System.EventHandler(this.pbLogo_Click);
+            this.pbLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pbLogo_MouseDown);
+            this.pbLogo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pbLogo_MouseMove);
+            this.pbLogo.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pbLogo_MouseUp);
             // 
             // plIsi
             // 
@@ -259,7 +269,7 @@ namespace Tool_Windows
             this.panel2.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -271,8 +281,8 @@ namespace Tool_Windows
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pbLogo;
+        private System.Windows.Forms.Label lblDashboard;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btnMinimize;
         private System.Windows.Forms.Button btnFull;

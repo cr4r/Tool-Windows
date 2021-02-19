@@ -75,7 +75,7 @@ namespace Tool_Windows
                 nordVPN.Visible = false;
                 IsOpen = false;
             }
-            MessageBox.Show("Isopen: "+IsOpen.ToString() + "\nOpen Form:" + openForm.ToString(), "Gagal!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            /*MessageBox.Show("Isopen: "+IsOpen.ToString() + "\nOpen Form:" + openForm.ToString(), "Gagal!", MessageBoxButtons.OK, MessageBoxIcon.Information);*/
             
         }
 
@@ -95,15 +95,11 @@ namespace Tool_Windows
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void plGambarAtas_MouseDown(object sender, MouseEventArgs e)
-        {
-            mov = 1; movX = e.X; movY = e.Y;
-        }
-
         private void plGambarAtas_MouseMove(object sender, MouseEventArgs e)
         {
             if(mov == 1)
             {
+                this.WindowState = FormWindowState.Normal;
                 this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
             }
         }
@@ -111,6 +107,49 @@ namespace Tool_Windows
         private void plGambarAtas_MouseUp(object sender, MouseEventArgs e)
         {
             mov = 0;
+        }
+
+        private void pbLogo_MouseUp(object sender, MouseEventArgs e)
+        {
+            mov = 0;
+        }
+
+        private void pbLogo_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1; movX = e.X; movY = e.Y;
+        }
+
+        private void plGambarAtas_MouseDown(object sender, MouseEventArgs e)
+        {
+            mov = 1; movX = e.X; movY = e.Y;
+        }
+
+
+        private void plGambarAtas_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            this.WindowState = FormWindowState.Maximized;
+        }
+
+        private void pbLogo_Click(object sender, EventArgs e)
+        {
+            if(this.WindowState.ToString().ToLower() == "maximized")
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+            
+        }
+
+        private void pbLogo_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mov == 1)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.SetDesktopLocation(MousePosition.X - movX, MousePosition.Y - movY);
+            }
         }
 
         private void btnFull_Click(object sender, EventArgs e)
@@ -123,7 +162,6 @@ namespace Tool_Windows
             {
                 this.WindowState = FormWindowState.Normal;
                 this.StartPosition= FormStartPosition.CenterScreen;
-                Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
             }
         }
 
