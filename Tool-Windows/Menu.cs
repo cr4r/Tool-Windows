@@ -36,17 +36,21 @@ namespace Tool_Windows
 
         private void clear()
         {
-            
+            toggle(btnNordVPN);
         }
 
-        void toggle(object sender)
+        private void toggle(Button btn)
         {
-            btnNordVPN.ForeColor = System.Drawing.Color.Aquamarine;
+            plNav.Height = btn.Height;
+            plNav.Top = btn.Top;
+            plNav.Left = btn.Left - 4;
+            MessageBox.Show("Nav: "+plNav.Location+"\nbtn "+btn.ToString()+":"+btn.Location.ToString());
         }
 
         private void btnNordVPN_Click(object sender, EventArgs e)
         {
-            /*toggle(sender);*/
+            toggle(btnNordVPN);
+
             foreach (Form frm in Application.OpenForms)
             {
                 if (frm.Text.ToString().ToLower() == "nord vpn")
@@ -143,6 +147,16 @@ namespace Tool_Windows
             
         }
 
+        private void btnNordVPN_MouseLeave(object sender, EventArgs e)
+        {
+            btnNordVPN.BackColor = System.Drawing.Color.Transparent;
+        }
+
+        private void btnNmap_Click(object sender, EventArgs e)
+        {
+            toggle(btnNmap);
+        }
+
         private void pbLogo_MouseMove(object sender, MouseEventArgs e)
         {
             if (mov == 1)
@@ -167,7 +181,7 @@ namespace Tool_Windows
 
         private void btnNordVPN_MouseHover(object sender, EventArgs e)
         {
-            btnClose.ForeColor = System.Drawing.Color.Aquamarine;
+            btnNordVPN.BackColor = System.Drawing.Color.Aquamarine;
         }
     }
 }

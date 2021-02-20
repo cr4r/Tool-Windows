@@ -41,6 +41,8 @@ namespace Tool_Windows
             this.btnClose = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.btnNmap = new System.Windows.Forms.Button();
+            this.plNav = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pbLogo = new System.Windows.Forms.PictureBox();
             this.plIsi = new System.Windows.Forms.Panel();
@@ -56,31 +58,36 @@ namespace Tool_Windows
             // 
             // btnNordVPN
             // 
+            this.btnNordVPN.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNordVPN.BackColor = System.Drawing.Color.Transparent;
             this.btnNordVPN.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNordVPN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnNordVPN.FlatAppearance.BorderSize = 0;
+            this.btnNordVPN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNordVPN.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNordVPN.ForeColor = System.Drawing.Color.White;
-            this.btnNordVPN.Location = new System.Drawing.Point(0, -1);
+            this.btnNordVPN.Image = ((System.Drawing.Image)(resources.GetObject("btnNordVPN.Image")));
+            this.btnNordVPN.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNordVPN.Location = new System.Drawing.Point(6, -1);
             this.btnNordVPN.Name = "btnNordVPN";
-            this.btnNordVPN.Size = new System.Drawing.Size(200, 46);
+            this.btnNordVPN.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnNordVPN.Size = new System.Drawing.Size(194, 46);
             this.btnNordVPN.TabIndex = 0;
             this.btnNordVPN.Text = "NordVPN";
-            this.btnNordVPN.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNordVPN.UseVisualStyleBackColor = false;
             this.btnNordVPN.Click += new System.EventHandler(this.btnNordVPN_Click);
+            this.btnNordVPN.MouseLeave += new System.EventHandler(this.btnNordVPN_MouseLeave);
             this.btnNordVPN.MouseHover += new System.EventHandler(this.btnNordVPN_MouseHover);
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
             this.panel1.Controls.Add(this.plGambarAtas);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Location = new System.Drawing.Point(202, 0);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(686, 53);
+            this.panel1.Size = new System.Drawing.Size(888, 53);
             this.panel1.TabIndex = 1;
             // 
             // plGambarAtas
@@ -91,9 +98,9 @@ namespace Tool_Windows
             this.plGambarAtas.Controls.Add(this.pictureBox2);
             this.plGambarAtas.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.plGambarAtas.ForeColor = System.Drawing.Color.Transparent;
-            this.plGambarAtas.Location = new System.Drawing.Point(3, 3);
+            this.plGambarAtas.Location = new System.Drawing.Point(203, 4);
             this.plGambarAtas.Name = "plGambarAtas";
-            this.plGambarAtas.Size = new System.Drawing.Size(540, 45);
+            this.plGambarAtas.Size = new System.Drawing.Size(539, 45);
             this.plGambarAtas.TabIndex = 4;
             this.plGambarAtas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.plGambarAtas_MouseDown);
             this.plGambarAtas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.plGambarAtas_MouseMove);
@@ -127,7 +134,7 @@ namespace Tool_Windows
             this.panel4.Controls.Add(this.btnMinimize);
             this.panel4.Controls.Add(this.btnFull);
             this.panel4.Controls.Add(this.btnClose);
-            this.panel4.Location = new System.Drawing.Point(546, 0);
+            this.panel4.Location = new System.Drawing.Point(748, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(139, 52);
             this.panel4.TabIndex = 6;
@@ -139,7 +146,8 @@ namespace Tool_Windows
             this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimize.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMinimize.FlatAppearance.BorderSize = 0;
+            this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Font = new System.Drawing.Font("Hobo Std", 8F, System.Drawing.FontStyle.Bold);
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
             this.btnMinimize.Location = new System.Drawing.Point(14, -2);
@@ -156,7 +164,8 @@ namespace Tool_Windows
             this.btnFull.BackColor = System.Drawing.Color.Transparent;
             this.btnFull.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnFull.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFull.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnFull.FlatAppearance.BorderSize = 0;
+            this.btnFull.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFull.Font = new System.Drawing.Font("Hobo Std", 12F, System.Drawing.FontStyle.Bold);
             this.btnFull.ForeColor = System.Drawing.Color.White;
             this.btnFull.Location = new System.Drawing.Point(56, -2);
@@ -173,7 +182,8 @@ namespace Tool_Windows
             this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Hobo Std", 8F, System.Drawing.FontStyle.Bold);
             this.btnClose.ForeColor = System.Drawing.Color.White;
             this.btnClose.Location = new System.Drawing.Point(98, -2);
@@ -201,11 +211,43 @@ namespace Tool_Windows
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel6.Controls.Add(this.btnNmap);
+            this.panel6.Controls.Add(this.plNav);
             this.panel6.Controls.Add(this.btnNordVPN);
             this.panel6.Location = new System.Drawing.Point(0, 55);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(197, 335);
+            this.panel6.Size = new System.Drawing.Size(200, 359);
             this.panel6.TabIndex = 1;
+            // 
+            // btnNmap
+            // 
+            this.btnNmap.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNmap.BackColor = System.Drawing.Color.Transparent;
+            this.btnNmap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNmap.FlatAppearance.BorderSize = 0;
+            this.btnNmap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNmap.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNmap.ForeColor = System.Drawing.Color.White;
+            this.btnNmap.Image = ((System.Drawing.Image)(resources.GetObject("btnNmap.Image")));
+            this.btnNmap.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNmap.Location = new System.Drawing.Point(6, 46);
+            this.btnNmap.Name = "btnNmap";
+            this.btnNmap.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnNmap.Size = new System.Drawing.Size(194, 46);
+            this.btnNmap.TabIndex = 1;
+            this.btnNmap.Text = "Nmap";
+            this.btnNmap.UseVisualStyleBackColor = false;
+            this.btnNmap.Click += new System.EventHandler(this.btnNmap_Click);
+            // 
+            // plNav
+            // 
+            this.plNav.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.plNav.Location = new System.Drawing.Point(3, 3);
+            this.plNav.Name = "plNav";
+            this.plNav.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.plNav.Size = new System.Drawing.Size(3, 100);
+            this.plNav.TabIndex = 999;
             // 
             // panel3
             // 
@@ -290,6 +332,8 @@ namespace Tool_Windows
         private System.Windows.Forms.Panel plGambarAtas;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel plIsi;
+        private System.Windows.Forms.Panel plNav;
+        private System.Windows.Forms.Button btnNmap;
     }
 }
 
