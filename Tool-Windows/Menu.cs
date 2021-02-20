@@ -44,7 +44,6 @@ namespace Tool_Windows
             plNav.Height = btn.Height;
             plNav.Top = btn.Top;
             plNav.Left = btn.Left - 4;
-            MessageBox.Show("Nav: "+plNav.Location+"\nbtn "+btn.ToString()+":"+btn.Location.ToString());
         }
 
         private void btnNordVPN_Click(object sender, EventArgs e)
