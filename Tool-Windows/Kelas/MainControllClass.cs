@@ -43,5 +43,26 @@ namespace Tool_Windows.Kelas
                 return check.IsMatch(Address, 0);
             }
         }
+
+        public static bool isEmail(string email)
+        {
+            Regex regex = new Regex(@"^([\w\.\-]+)@([\w\-]+)((\.(\w){2,3})+)$");
+            Match match = regex.Match(email);
+            return match.Success;
+        }
+
+        public static bool isUrl(string url)
+        {
+            Regex regex = new Regex(@"^(http|http(s)?://)?([\w-]+\.)+[\w-]+[.com|.in|.org]+(\[\?%&=]*)?");
+            Match match = regex.Match(url);
+            return match.Success;
+        }
+
+        public static bool isNumber(string number)
+        {
+            Regex regex = new Regex(@"((\+628[/]*)?(\d[/]*){8}\d)");
+            Match match = regex.Match(number);
+            return match.Success;
+        }
     }
 }

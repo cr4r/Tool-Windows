@@ -53,6 +53,7 @@ namespace Tool_Windows
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.plIsi = new Guna.UI2.WinForms.Guna2Panel();
             this.panelAtas = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblWaktu = new System.Windows.Forms.Label();
             this.lblInfoHome = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -66,7 +67,6 @@ namespace Tool_Windows
             this.dragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
             this.loadingHome = new System.Windows.Forms.ProgressBar();
-            this.lblWaktu = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.plKiri.SuspendLayout();
             this.plKiriMenu.SuspendLayout();
@@ -599,6 +599,22 @@ namespace Tool_Windows
             this.panelAtas.Size = new System.Drawing.Size(680, 32);
             this.panelAtas.TabIndex = 2;
             // 
+            // lblWaktu
+            // 
+            this.lblWaktu.AutoEllipsis = true;
+            this.lblWaktu.BackColor = System.Drawing.Color.Transparent;
+            this.lblWaktu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblWaktu.Dock = System.Windows.Forms.DockStyle.Right;
+            this.lblWaktu.Font = new System.Drawing.Font("Eras Medium ITC", 12F);
+            this.lblWaktu.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblWaktu.Location = new System.Drawing.Point(455, 0);
+            this.lblWaktu.Name = "lblWaktu";
+            this.lblWaktu.Size = new System.Drawing.Size(76, 32);
+            this.lblWaktu.TabIndex = 2;
+            this.lblWaktu.Text = "00:00:00";
+            this.lblWaktu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblWaktu.UseCompatibleTextRendering = true;
+            // 
             // lblInfoHome
             // 
             this.lblInfoHome.AutoEllipsis = true;
@@ -721,22 +737,6 @@ namespace Tool_Windows
             this.loadingHome.Name = "loadingHome";
             this.loadingHome.Size = new System.Drawing.Size(680, 5);
             this.loadingHome.TabIndex = 3;
-            // 
-            // lblWaktu
-            // 
-            this.lblWaktu.AutoEllipsis = true;
-            this.lblWaktu.BackColor = System.Drawing.Color.Transparent;
-            this.lblWaktu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblWaktu.Dock = System.Windows.Forms.DockStyle.Right;
-            this.lblWaktu.Font = new System.Drawing.Font("Eras Medium ITC", 12F);
-            this.lblWaktu.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblWaktu.Location = new System.Drawing.Point(455, 0);
-            this.lblWaktu.Name = "lblWaktu";
-            this.lblWaktu.Size = new System.Drawing.Size(76, 32);
-            this.lblWaktu.TabIndex = 2;
-            this.lblWaktu.Text = "00:00:00";
-            this.lblWaktu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblWaktu.UseCompatibleTextRendering = true;
             // 
             // timer1
             // 

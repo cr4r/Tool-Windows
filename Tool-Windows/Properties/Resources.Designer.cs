@@ -103,16 +103,6 @@ namespace Tool_Windows.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap LogoCoders {
-            get {
-                object obj = ResourceManager.GetObject("LogoCoders", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap LogoCodersWhite {
             get {
                 object obj = ResourceManager.GetObject("LogoCodersWhite", resourceCulture);
@@ -153,6 +143,16 @@ namespace Tool_Windows.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap password_ico {
+            get {
+                object obj = ResourceManager.GetObject("password_ico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap settings {
             get {
                 object obj = ResourceManager.GetObject("settings", resourceCulture);
@@ -176,6 +176,26 @@ namespace Tool_Windows.Properties {
         internal static System.Drawing.Bitmap user_30px {
             get {
                 object obj = ResourceManager.GetObject("user_30px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap username_ico {
+            get {
+                object obj = ResourceManager.GetObject("username_ico", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap warningIcon {
+            get {
+                object obj = ResourceManager.GetObject("warningIcon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

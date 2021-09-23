@@ -1,34 +1,35 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-using System.Data;
-using System.Windows.Forms;
-using System.Net.NetworkInformation;
-using MongoDB.Driver;
 using System.Net.Http;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json;
+using System.Net;
 
 namespace Tool_Windows
 {
     class Connection
     {
-        private string uri;
-        private static readonly string uriApi = "https://api-artikel.herokuapp.com";
-        public IMongoClient client;
+        private static readonly string uriApi = "https://api.coders-family.me";
         public Connection()
         {
-            uri = "mongodb+srv://cr4r:2XradjHDeyXENFyt@datablog.fqkmh.mongodb.net/blog?retryWrites=true&w=majority";
         }
 
-        public bool konekDB()
+        public async Task<bool> konekDB()
         {
             try
             {
-                client = new MongoClient(uri);
-                return true;
+                var pingServer = await getApi();
+                Console.WriteLine("True " + pingServer );
+                var hasil = JsonConvert.DeserializeObject<Dictionary<string, string>>(pingServer);
+                if(hasil["status"] == "ok")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
             catch (Exception e)
             {
@@ -37,12 +38,19 @@ namespace Tool_Windows
             }
         }
 
+        private static void bersih(HttpClient client = null)
+        {
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
+            client.DefaultRequestHeaders.Add("keyApi", @"fh38j$jdk95%^&#Gk$!@#05*(");
+        }
+
         public static async Task<string> getApi(string tujuan = "/")
         {
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
+                    bersih(client);
                     using (HttpResponseMessage res = await client.GetAsync(uriApi + tujuan))
                     {
                         using (HttpContent content = res.Content)
@@ -56,20 +64,21 @@ namespace Tool_Windows
                     }
                 }
             }
-            catch
+            catch(Exception e)
             {
-                return $"Error!\nAda kesalahan dalam koneksi";
+                return $"Error!\n{e}";
             }
             return string.Empty;
         }
 
-        public static async Task<string> postApi(Dictionary<string, string> dataStr = null, string tujuan = "/", string type = "post")
+        public static async Task<string> postApi(Dictionary<string, string> dataStr = null, string tujuan = "/")
         {
             var inputData = new FormUrlEncodedContent(dataStr);
             try
             {
                 using (HttpClient client = new HttpClient())
                 {
+                    bersih(client);
                     using (HttpResponseMessage res = await client.PostAsync(uriApi + tujuan, inputData))
                     {
                         using (HttpContent content = res.Content)
@@ -89,6 +98,7 @@ namespace Tool_Windows
             }
             return string.Empty;
         }
+
 
         public static string BeautifyJson(string jsonStr)
         {
